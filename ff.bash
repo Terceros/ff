@@ -13,8 +13,6 @@ if [[ -d "$path" ]]; then
 		help
 		exit 1
 	else
-		find "$path" -name "$filepattern"
-		echo "----------------------------------------"
 		find "$path" -name "$filepattern" | while read file; do
 			is_present=`grep "$pattern" "$file" | wc -l`
 			if [ $is_present -ge 1 ]; then
