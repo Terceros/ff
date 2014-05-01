@@ -12,4 +12,4 @@ file_pattern	A file name or pattern
 
 pattern		A pattern to search in the file(s)
 
-e.g.	$0 . *.py create_course_shell
+e.g.	$0 . "*.py" create_course_shell
